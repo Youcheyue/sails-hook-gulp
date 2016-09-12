@@ -1,0 +1,25 @@
+{
+  "name": "sails-hook-gulptask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "sails": {
+    "isHook": true
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:Youcheyue/sails-hook-gulptask.git"
+  },
+  "author": "terry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Youcheyue/sails-hook-gulptask/issues"
+  },
+  "homepage": "https://github.com/Youcheyue/sails-hook-gulptask#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
