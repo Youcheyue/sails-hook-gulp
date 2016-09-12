@@ -1,6 +1,6 @@
 {
   "name": "sails-hook-gulptask",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "sails": {
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+git@github.com:Youcheyue/sails-hook-gulptask.git"
+    "url": "git+git@github.com:Youcheyue/sails-hook-gulp.git"
   },
   "author": "terry",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Youcheyue/sails-hook-gulptask/issues"
+    "url": "https://github.com/Youcheyue/sails-hook-gulp/issues"
   },
-  "homepage": "https://github.com/Youcheyue/sails-hook-gulptask#readme",
+  "homepage": "https://github.com/Youcheyue/sails-hook-gulp#readme",
   "dependencies": {
     "gulp": "^3.9.1"
   }
