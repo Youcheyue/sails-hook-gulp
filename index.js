@@ -45,7 +45,11 @@ module.exports = function (sails) {
 
       // Start task depending on environment
       if(sails.config.environment === 'production'){
-        return this.runTask('prod', cb);
+        if (process.env.NODE_APP_INSTANCE === '0' || !process.env.NODE_APP_INSTANCE) {
+          return this.runTask('prod', cb);
+        } else {
+          return this.runTask('empty', cb);
+        }
       }
 
       this.runTask('default', cb);
@@ -201,8 +205,9 @@ module.exports = function (sails) {
       sails.childProcesses.push(child);
 
       // Go ahead and get out of here, since Gulp might sit there backgrounded
-
-      cb_afterTaskStarted();
+      if(sails.config.environment !== 'production'){
+        cb_afterTaskStarted();
+      }
 
     }
   };
